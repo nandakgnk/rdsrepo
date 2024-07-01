@@ -16,6 +16,8 @@ jobs:
         with:
           python-version: '3.9'
       - name: Install Ansible
-        run: pip install ansible psycopg2-binary
+        run: pip install ansible
+      - name: install pipcop
+        run: pip install psycopg2-binary
       - name: Run Ansible playbook
         run: ansible-playbook -e "ansible_python_interpreter=/usr/bin/python3" playbook.yaml
