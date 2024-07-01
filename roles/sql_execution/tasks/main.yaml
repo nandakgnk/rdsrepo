@@ -9,5 +9,5 @@
     db: my_database
     login_user: "test_admin"
     login_password: "jzXRn37WG:Ekstc}TA93([%Umm#O"
-    login_host: "testdb.cluster-chwu04k8cfwi.us-east-1.rds.amazonaws.com"
+    login_host: "testdb-instance-1.chwu04k8cfwi.us-east-1.rds.amazonaws.com"
     path: /tmp/my_sql_script.sql
