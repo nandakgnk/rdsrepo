@@ -27,5 +27,5 @@ jobs:
           pwd
           which python
           python --version
-          ansible-playbook playbook.yaml -e 'ansible_python_interpreter=/usr/bin/python'
+          ansible-playbook playbook.yaml -e 'ansible_python_interpreter=/opt/hostedtoolcache/Python/3.12.4/x64/bin/python'
         
