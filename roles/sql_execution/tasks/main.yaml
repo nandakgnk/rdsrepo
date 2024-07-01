@@ -5,7 +5,7 @@
     dest: /tmp/my_sql_script.sql
 
 - name: Execute SQL script
-  community.postgresql.postgresql_script:
+  community.postgresql.postgresql_db:
     db: postgres
     login_user: "test_admin"
     login_port: 5432
