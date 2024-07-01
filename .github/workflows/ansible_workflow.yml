@@ -18,4 +18,4 @@ jobs:
       - name: Install Ansible
         run: pip install ansible
       - name: Run Ansible playbook
-        run: ansible-playbook playbook.yml
+        run: ansible-playbook playbook.yaml
