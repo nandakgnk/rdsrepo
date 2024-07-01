@@ -1,5 +1,7 @@
 ---
 - name: Execute SQL on RDS PostgreSQL
   hosts: localhost
+  vars:
+     ansible_python_interpreter: /usr/bin/python
   roles:
     - sql_execution
