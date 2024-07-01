@@ -1,0 +1,5 @@
+---
+- name: Execute SQL on RDS PostgreSQL
+  hosts: localhost
+  roles:
+    - sql_execution
