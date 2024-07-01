@@ -1,9 +1,9 @@
 name: Execute Ansible Playbook
-
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   ansible_job:
@@ -22,4 +22,10 @@ jobs:
       - name: install pipcop
         run: pip install psycopg2-binary
       - name: Run Ansible playbook
-        run: ansible-playbook playbook.yaml -e "ansible_python_interpreter=/usr/bin/python"
+        shell: bash
+        run: |
+          pwd
+          which python
+          python --version
+          ansible-playbook playbook.yaml -e 'ansible_python_interpreter=/usr/bin/python'
+        
