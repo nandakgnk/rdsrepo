@@ -1,0 +1,13 @@
+---
+- name: Copy SQL file to remote host
+  copy:
+    src: my_sql_script.sql
+    dest: /tmp/my_sql_script.sql
+
+- name: Execute SQL script
+  community.postgresql.postgresql_script:
+    db: my_database
+    login_user: "test_admin"
+    login_password: "jzXRn37WG:Ekstc}TA93([%Umm#O"
+    login_host: "testdb.cluster-chwu04k8cfwi.us-east-1.rds.amazonaws.com"
+    path: /tmp/my_sql_script.sql
